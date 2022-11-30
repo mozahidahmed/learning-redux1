@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 
-const Card = () => {
-    const [count,setCount]=useState(0)
+const Child = ({count,setCount}) => {
+   
 
 
 
     return (
         <div>
      
-            <div class="container card-style text-center " >
-                <div class="card-body">
-                <h5 class="card-title">{count}</h5>
+            <div class="container Child-style text-center " >
+                <div class="Child-body">
+                    <h5>Child</h5>
+                <h5 class="Child-title">{count}</h5>
                <div className="mt-4">
                
                 <button type="button" onClick={()=>setCount(count-1)} class="btn btn-primary mx-2">Decrement</button>
@@ -24,4 +25,4 @@ const Card = () => {
     );
 };
 
-export default Card;
+export default Child;

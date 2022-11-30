@@ -1,10 +1,11 @@
 import React from 'react';
-import Card from './Card.js/Card';
+import Parent from './Card.js/Parent';
+
 
 const Home = () => {
     return (
         <div>
-        <Card></Card>
+         <Parent></Parent>
         </div>
     );
 };
