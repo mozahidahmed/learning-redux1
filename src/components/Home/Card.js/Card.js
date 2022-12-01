@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useContext} from 'react';
+import { COUNTER_CONTEXT } from '../../../App';
 
-const Child = ({count,setCount}) => {
-   
 
+
+const Child = () => {
+    const {count,setCount} = useContext(COUNTER_CONTEXT);
 
 
     return (
